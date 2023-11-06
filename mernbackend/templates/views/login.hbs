@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   {{>header}}
+    <title>Document</title>
+</head>
+<body>
+    {{>navbar}}
+
+    <div class="continer">
+        <div class="row my-5">
+            <div class="col-sm-6 col-md-4 mx-auto">
+                <h1 class="text-center login-little my-5">Employee Login form</h1>
+<div class="account-wall">
+    <img class="profile-img" 
+    src="" alt="">
+    <form class="form-signin" action="/login" method="post">
+        <input type="text" class="form-control" placeholder="email" required name="email">
+         <input type="password" class="form-control" placeholder="password" required name="password">
+        <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
+        <label class="checkbox pull-left mt-3" >
+            <input type="checkbox" value="remember-me">
+            Remember me
+        </label>
+        <a href="#" class="pull-right need-help">Need help?</a><span class="clearfix"></span>
+    </form>
+</div>
+<a href="/registeration" class="text-center new account">Create an account</a>
+            </div>
+
+        </div>
+
+    </div>
+</body>
+</html>
