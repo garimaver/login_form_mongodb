@@ -66,6 +66,23 @@ app.post("/register", async (req, res) => {
     }
     })
 
+    //login check
+
+    app.post("/login", async(req,res)=> {
+        try {
+            const email = req.body.email;
+            const password = req.body.password;
+
+
+            const useremail = await Register.findOne({email:email});
+            
+            // console.log(`${email} and password is ${password}`)
+            
+        } catch (error) {
+            res.status(400).send("invalid Email")
+        }
+    })
+
 app.listen(port, () => {
 console.log(`server is running at port on ${port}`);
 })
