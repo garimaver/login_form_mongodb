@@ -22,6 +22,10 @@ app.get("/", (req, res) => {
     res.render("index")
 });
 
+app.get("/register", (req, res) => {
+res.render("register");
+})
+
 app.listen(port, () => {
 console.log(`server is running at port on ${port}`);
 })
