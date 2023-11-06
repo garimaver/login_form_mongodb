@@ -75,11 +75,15 @@ app.post("/register", async (req, res) => {
 
 
             const useremail = await Register.findOne({email:email});
-            
-            // console.log(`${email} and password is ${password}`)
+               
+            if(useremail.password === password){
+                res.status(201).render("index");
+            }else{
+                res.send("password are not watching");
+            }
             
         } catch (error) {
-            res.status(400).send("invalid Email")
+            res.status(400).send("invalid login details")
         }
     })
 

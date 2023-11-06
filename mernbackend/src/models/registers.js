@@ -19,12 +19,12 @@ gender : {
     required : true
 },
 phone : {
-    type:Number,
+    type:String,
     required : true,
     unique:true
 },
 age: {
-    type:Number,
+    type:String,
     required : true
 },
 password: {
@@ -39,6 +39,6 @@ confirmpassword : {
 
 // now we need to create a collections
 
-const register = new mongoose.model("Register", employeeSchema);
+const Register = new mongoose.model("Register", employeeSchema);
 
-module.exports = register;
+module.exports = Register;

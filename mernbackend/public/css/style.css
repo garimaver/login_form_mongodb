@@ -1,3 +1,69 @@
+.register .nav-tabs{
+    margin-top: 3%;
+    border: none;
+    background: #0062cc;
+    border-radius: 1.5rem;
+    width: 28%;
+    float: right;
+}
+
+.register .nav-tabs .nav-link{
+    padding: 2%;
+    height: 34px;
+    font-weight: 600;
+    color: #fff;
+    border-top-right-radius: 1.5rem;
+    border-bottom-right-radius: 1.5rem;
+}
+
+.register .nav-tabs .nav-link:hover{
+    border: none;
+}
+
+.register .nav-tabs .nav-link.active{
+    width: 100px;
+    color: #0062cc;
+    border: 2px solid #0062cc;
+    border-top-left-radius: 1.5rem;
+}
+
+.about-text p {
+ font-size: 16px;
+}
+
+#team-section{
+    padding: 50px 0;
+    background: #5385c1;
+    color: #fff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .register-heading{
     text-align: center;
     margin-top: 8%;
@@ -31,9 +97,7 @@
 }
 
 #about-section{
-padding: 50px 0;
-background: #5385c1;
-color: #fff;
+
 }
 
 .team-member-id.text-cenetr h1{
@@ -96,4 +160,7 @@ color: #fff;
 .new-account{
     display: block;
     margin-top: 10px;
+}
+.new-account{
+    text-align: center;
 }
